@@ -14886,7 +14886,7 @@ def getBaseDir(filename=None, alt=None):
 	if ".exe" in filename:
 		filename =filename.replace(".exe", "")
 	base=os.getcwd()
-	baseDir  = os.path.join(base, filename)
+	baseDir  = os.path.join(base, "rop-rocket-output")
 	if not os.path.isdir(baseDir):
 		# print("Creating..")
 		os.makedirs(baseDir)
